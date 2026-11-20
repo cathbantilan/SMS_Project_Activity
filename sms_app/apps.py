@@ -1,5 +1,6 @@
 from django.apps import AppConfig
 
 
-class DashboardConfig(AppConfig):
-    name = 'dashboard'
+class SmsAppConfig(AppConfig):
+    default_auto_field = 'django.db.models.BigAutoField'
+    name = 'sms_app'
