@@ -50,6 +50,10 @@ TWILIO_ACCOUNT_SID = os.getenv('TWILIO_ACCOUNT_SID')
 TWILIO_AUTH_TOKEN = os.getenv('TWILIO_AUTH_TOKEN')
 TWILIO_PHONE_NUMBER = os.getenv('TWILIO_PHONE_NUMBER')
 
+TEXTBEE_API_KEY = os.getenv('TEXTBEE_API_KEY')
+TEXTBEE_DEVICE_ID = os.getenv('TEXTBEE_DEVICE_ID')
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -60,7 +64,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'smsproject.urls'
+ROOT_URLCONF = 'sms_project.urls'
 
 TEMPLATES = [
     {
@@ -77,7 +81,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'smsproject.wsgi.application'
+WSGI_APPLICATION = 'sms_project.wsgi.application'
 
 
 # Database
